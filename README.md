@@ -324,7 +324,7 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 1. Faça o clone do projeto e crie uma pasta com seu nome dentro da pasta exercicio-alunas
 2. O html já está todo pronto, você irá criar e ajustar apenas o CSS
 3. O estilo deverá ser aplicado considerando a responsividade **MOBILE FIRST** e deverá se adapatar para as versões tablet(768px/1024px) e desktop(1280px)
-4. Na pasta _exercicio_ temos o layout finalizado versão mobile e desktop
+4. Na pasta _exercicio/orientacoes_ temos o layout finalizado versão mobile e desktop
 
 ## Orientações gerais
 
