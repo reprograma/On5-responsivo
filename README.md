@@ -85,11 +85,7 @@ O conceito de _layout responsivo_ surgiu em 2010, com o designer Ethan Marcotte
 
 - Resolução de tela: A resolução da tela de um dispositivo é o número de pixels em cada dimensão que podem ser exibidos.
 
-  ![pixel](https://www.exposureguide.com/media/resolution-of-the-image-in-pixels.jpg?x51595)
-
 - Tamanho de tela: tamanho físico da tela, normalmente medido em polegadas
-
-  ![screens](https://res.cloudinary.com/practicaldev/image/fetch/s--Sed0tQ_i--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn-images-1.medium.com/max/800/1%2AOkcOPoWR3bxKY2axlDX9UA.gif)
 
 A resolução de monitores de dispositivos digitais indica o número de pontos (ou pixels) que compõem a imagem que aparece na tela. Uma tela com 1920 x 1080 mostra 1920 pontos em cada uma das 1080 linhas do monitor!
 
@@ -100,6 +96,8 @@ Dispositivos com o mesmo tamanho podem ter resoluções de tela diferentes!
 <div id='viewportMetaTag'></div>
 
 **VIEWPORT META TAG:**
+
+---
 
 Quando se trata de responsividade temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
 
@@ -274,8 +272,6 @@ Ex: Nosso ponto de partida é uma tela 768px. Ao invés de mudar os estilos à m
 A propriedade de css display: flex permite alinhar com facilidade elementos lado a lado.
 
 Você deve adicionar a propriedade no elemento pai para alinhar o conteúdo filho lado a lado.
-
-![flex-direction](https://cdn-media-1.freecodecamp.org/images/HHwxqz2N4bNksz9YwcMBAtD0z9TTCxeNXNBS)
 
 ```
 <nav class="container">
