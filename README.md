@@ -219,6 +219,8 @@ Assim trabalharemos com os seguintes 'breakpoints':
 
 ---
 
+![measures](https://webandcrafts.com/blog/wp-content/uploads/2019/02/Relative-units.gif)
+
 **Medida absoluta:**
 
 - px: o pixel é uma medida fixa, logo absoluta. Quando aplicamos um valor para a fonte em px, dizemos ao navegador que o tamanho da nossa fonte será sempre aquele, independente de tamanho e resolução de telas.
