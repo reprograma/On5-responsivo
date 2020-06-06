@@ -319,6 +319,42 @@ Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observa
 
 ---
 
+## Etapas do projeto
+
+1. Faça o clone do projeto e crie uma pasta com seu nome dentro da pasta exercicio-alunas
+2. O html já está todo pronto, você irá criar e ajustar apenas o CSS
+3. O estilo deverá ser aplicado considerando a responsividade **MOBILE FIRST** e deverá se adapatar para as versões tablet(768px/1024px) e desktop(1280px)
+4. Na pasta _exercicio_ temos o layout finalizado versão mobile e desktop
+
+## Orientações gerais
+
+- Clonar este repositório: `https://github.com/reprograma/On5-responsivo`
+- Crie sua branch: `git checkout -b seuNome`, ex: `git checkout -b barbaraAguilar`
+- **Atenção**: Faça alterações apenas nos arquivos dentro da sua pasta, os arquivos da pasta raiz _exercicio_ não deverão ser modificados para não acarretar conflitos de git **ALTERA OS ARQUIVOS SOMENTE DENTRO DA SUA PASTA**
+- Adicione uma pasta com seu-nome dentro da pasta `exercicio`, ex: _barbara-aguilar_
+- Dentro da pasta com seu-nome, copie os arquivos da pasta raiz _exercicio_
+- trabalhe dentro da sua branch fazendo todos os commits e pushs direcionados para ela, ao finalizar o projeto realizar o `pull request` para a master
+- A organização final da pasta deverá ficar assim:
+
+```
+exercicio-alunas/
+  seu-nome/
+    index.html
+    css/
+      style.css
+    img/
+      antartida-1.jpg
+      facebook.png
+      foto-banner.jpg
+      groelandia-1.jpg
+      menu-hamburger.jpg
+      siberia-1.jpg
+      twitter.png
+      youtube.png
+```
+
+---
+
 Links para consulta:
 
 <https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/>
