@@ -1,0 +1,31 @@
+.menu-mobile {
+  width: 400px;
+}
+.title-mobile {
+  font-size: 40px;
+}
+
+.text-mobile {
+  font-size: 30px;
+}
+
+.menu-desktop {
+  width: 1200px;
+  display: none;
+}
+.title-desktop {
+  font-size: 50px;
+}
+
+.text-desktop {
+  font-size: 40px;
+}
+
+@media (min-width: 1024px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu-desktop {
+    display: block;
+  }
+}
