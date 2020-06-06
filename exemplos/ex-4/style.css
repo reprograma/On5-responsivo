@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.red {
+  background-color: #bb2929;
+  width: 100vw;
+  height: auto;
+}
+
+.blue {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+.image-container {
+  width: 90vw;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
