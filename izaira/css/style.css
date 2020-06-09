@@ -8,8 +8,7 @@
 }
 
 h1 {
-    font-size: 40px;
-       
+    font-size: 60px;       
 }
 
 h2 {
@@ -63,7 +62,7 @@ p {
 }
 
 .about {
-    background-color: rgb(78, 77, 77);
+    background-color: #272626;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -85,8 +84,57 @@ p {
     background-color: #36b0e0;
 }
 
-.destination--siberia img {
-    width: 200px;
-    margin: 10px;
-    ;
+#destinos p, h3 {
+    color: black;
+    text-align: center;
+    padding: 10px;
 }
+.destination--siberia img {
+    width: 90vw;
+}
+
+.destination--groenlandia__wrapper-img img {
+    width: 90vw;
+}
+
+#destinos .destination--siberia, .destination--groenlandia, .destination--antartida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+}
+#destinos .destination_paragraph, .destination__title {
+    color: white;
+    margin: 10px 20px;
+    
+}
+
+#destinos .destination--groenlandia, .destination--antartida {
+    background-color: #272626;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: #272626;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.footer, a, small {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+
+.footer .footer__socialmedia {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    padding: 15px;   
+}
+
