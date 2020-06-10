@@ -237,7 +237,7 @@ p {
     }
     #destinos, .destination, .destination--siberia {
         display: flex;
-        margin: 2em 0 2em 2em;
+        margin: 2em 0 2em 0;
     }
 
     #destinos, .destination__text {
@@ -318,15 +318,23 @@ p {
 }
 
 /*  ---- AQUI COMEÇA O DESKTOP --- */
+
 @media (min-width: 1280px) {
 
     h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
    
     p {
-        font-size: 22px;
+        font-size: 25px;
+    }
+
+    .nav__menu {
+        display: flex;
+        justify-content: space-evenly; 
+        max-width: 70%;
+        margin-left: 50vw;        
     }
     .destination--siberia img {
         width: 50vw; 
@@ -338,13 +346,11 @@ p {
         padding: 5px;
         margin: 60px 0;
     }
-    
-
-   
+     
 
    #destinos, .destination, .destination--siberia {
         display: flex;
-        margin: 4em 0 4em 4em;
+        margin: 2em 0 4em 0em;
     }   
     
 
