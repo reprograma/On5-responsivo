@@ -6,9 +6,10 @@
     color: white;
     font-size: 20px;
 }
-
+/* ----- AQUI COMEÇA O MOBILE ---*/
 h1 {
-    font-size: 60px;       
+    font-size: 60px; 
+    text-transform: uppercase;      
 }
 
 h2 {
@@ -96,7 +97,12 @@ p {
     width: 90vw;
 }
 
-#destinos .destination--siberia, .destination--groenlandia, .destination--antartida{
+#destinos .destination--siberia{
+    text-align: center;
+
+}
+
+#destinos, .destination--groenlandia, .destination--antartida{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,10 +143,11 @@ p {
     padding: 15px;   
 }
 
+/* ---- AQUI COMEÇA O TABLET----*/
 @media (min-width: 768px) {
 
     .nav {
-        height: 5vh;
+        height: 6vh;
         background-color: #829dad;
         
     }
@@ -149,6 +156,7 @@ p {
         display: flex;
         font-size: 22px;
         padding: 6px;
+        margin-top: 1vw;
         
 
     }
@@ -158,32 +166,34 @@ p {
     
     h1 {
         font-size: 105px;
-        letter-spacing: 5px;       
+        letter-spacing: 8px;       
     }
     
     h2 {
         font-size: 22px;
     }
+
+    h3 {
+        font-size: 26px;
+    }
     
     p {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .nav__menu {
         display: flex;
-        justify-content: right;
-        align-items: center;
-        list-style: none;
         justify-content: space-evenly; 
-        max-width: 50%;
-        
+        max-width: 70%;
+        margin-left: 30vw;        
     }
-    
+
+        
     .banner {
         background: url(/izaira/img/foto-banner.jpg) center no-repeat;
         background-size: cover;
         width: 100%;
-        height: 55vh;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -198,7 +208,7 @@ p {
     
     .about {
         background-color: #272626;
-        height: 40vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -225,51 +235,125 @@ p {
         text-align: center;
         padding: 10px;
     }
-    .destination--siberia img {
-        width: 40vw;
-        
+    #destinos, .destination, .destination--siberia {
+        display: flex;
+        margin: 2em 0 2em 2em;
     }
-    #destinos, .destination--siberia {
-        display: inline-block;
-        
-        
-    }
-    .destination--groenlandia__wrapper-img img {
-        width: 50vw;
+
+    #destinos, .destination__text {
+        grid-column: 2;
+        margin-left: 5vw;
+        margin-top: auto;
+        margin-bottom: auto;
+                
     }
     
-    #destinos .destination--siberia, .destination--groenlandia, .destination--antartida{
+    .destination--siberia img {
+        width: 40vw; 
+        
+    }
+    .destination__border{
+        background-color: #829dad;
+        display: block;
+        padding: 5px;
+        margin: 60px 0;
+    }
+    
+
+    #destinos, .destination--groenlandia, .destination--antartida{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+                               
+    }
+
+   #destinos img {
+       max-width: 100%;
        
-      
-    }
-    #destinos .destination_paragraph, .destination__title {
-        color: white;
-        width: 50vw;
-        
-    }
-    
+   }
+
+       
     #destinos .destination--groenlandia, .destination--antartida {
         background-color: #272626;
         color: white;
-        text-align: center;
-        
-               
+        text-align: center; 
+        margin: auto; 
+          
     }
 
-    
+    #destinos, .destination__description--groenlandia, .destination__description--antartida{
+        display: block; 
+    }
+
+    #destinos {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
     
     .footer {
         background-color: #272626;
         align-items: center;
         text-align: center;
         padding: 30px;
-        margin-top: 20px;
+        margin-top: 60px;
         
     }
     
+    .footer, a, small {
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    
+    .footer .footer__socialmedia {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+        padding: 15px;  
+        max-width: 30%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*  ---- AQUI COMEÇA O DESKTOP --- */
+@media (min-width: 1280px) {
+
+    h2 {
+        font-size: 22px;
+    }
+
+   
+    p {
+        font-size: 22px;
+    }
+    .destination--siberia img {
+        width: 50vw; 
+        
+    }
+    .destination__border{
+        background-color: #829dad;
+        display: block;
+        padding: 5px;
+        margin: 60px 0;
+    }
+    
+
+   
+
+   #destinos, .destination, .destination--siberia {
+        display: flex;
+        margin: 4em 0 4em 4em;
+    }   
+    
+
+    #destinos {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+       
     .footer, a, small {
         font-size: 18px;
         text-decoration: none;
@@ -280,9 +364,9 @@ p {
         list-style: none;
         display: flex;
         justify-content: space-evenly;
-        margin: 15px;
+        margin: 10px;
         padding: 15px;  
-        max-width: 40%; 
+        max-width: 20%; 
         margin-left: auto;
         margin-right: auto;
     }
