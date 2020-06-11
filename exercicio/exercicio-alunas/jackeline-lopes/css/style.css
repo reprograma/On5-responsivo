@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*inclui o widht e o height*/
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 100%;/*experimentar o max-width*/
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__menu {
+    display: none;
+}
+
+.nav__mobile {
+   height: 50%;
+   padding-right: 10px;
+   padding-top: 10px; 
+}
+
+.banner__transition {
+    background: url(../img/foto-banner.jpg);
+    background-size: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Varela Round';
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.banner__title {
+    font-size: 70px;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    font-weight: 200;/*make thick letters*/
+}
+
+.banner__subtitle {
+    font-size: 18px;
+    font-weight: 200;/*make thick letters*/
+}
+
+.banner__transition a { /*os links dentro do banner transition ficam c/esta config*/
+    color: inherit;
+    text-decoration: none;
+}
+
+.banner__transition a:hover {
+    background-color: #36b0e0;
+    transition: ease 0.5s;
+}
+
+.banner__transition a:visited {
+    background-color:#829dad;
+}
+
+.banner__btn__transition {
+    background-color: #829dad;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.about {
+    background-color: #161616;
+    color: whitesmoke;
+    opacity: 85%;
+
+}
+
+.about__title {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+.about p {/*o paragrafo na classe about*/
+    font-size: 14px;
+    padding: 0 65px 25px 65px;
+}
+
+.container__destination {/*apanha as 3 imagens*/
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.destination__siberia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+ }
+
+ .destination__siberia__img {
+     width: 100%;
+ }
+
+.destination__text h3 { /*Sibéria*/
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.destination__text p {/*parágrafo sibéria*/
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.destination__groenlandia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.destination__groenlandia__img {
+    max-width: 90vw;/*tamanho maximo*/
+}
+
+.destination__description__groenlandia {
+    max-width: 90vw;
+    background-color:#161616;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box; 
+    padding: 10px 40px 30px 40px;
+}
+
+.destination__title {
+    font-size:22px;
+    margin-bottom: 10px;
+}
+
+.destination_paragraph__groenlandia {
+    color:gray;
+    margin-top: 0;
+}
+
+.destination__groenlandia__wrapper-img {
+    margin-bottom: -10px;/*p/tirar a linha branca entre as imagens*/
+}
+
+.destination__antartida {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.destination__description__antartida {
+    max-width: 90vw;
+    background-color:#161616;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box; 
+    padding: 10px 40px 30px 40px;
+    margin-top: 40px;
+}
+
+.destination_paragraph {
+    color:gray;
+    margin-top: 0;
+}
+
+.destination__antartida__img {
+    max-width: 90vw;
+}
+
+.footer {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: gray;
+    margin-top: 80px;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 10px 10px 25px 10px; 
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.footer a:hover {
+    color: #36b0e0;
+    transition: ease 0.5s;
+}
+
+.footer a:visited {
+    color: gray;
+}
+
+.footer__socialmedia {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;/*tirar os bullets*/
+    margin: 40px 0 40px 0;
+}
+
+.footer__socialmedia li {/*lista de itens - social media*/
+    margin: 0 30px 0 0;
+}
+
+@media (min-width: 768px) {/*1ºbreakpoint -MOBILE FIRST*/
+    .about__title {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size:16px;
+    }
+
+    .destination__text h3 {/*siberia*/
+        font-size: 28px;
+    }
+
+    .destination__text p {
+        font-size: 16px;
+        padding: 0 30px 0 30px;
+    }
+
+    .destination__title {
+        font-size: 28px;
+    }
+
+    .destination_paragraph__groenlandia {
+        font-size: 16px;
+    }
+
+    .destination_paragraph {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .banner__transition {
+        background-size: cover;
+    }
+
+    .banner__title {
+        font-size: 85px;
+    }
+
+    .banner__subtitle {
+        font-size: 20px;  
+    }
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .destination__text h3 {/*siberia*/
+        font-size: 30px;
+    }
+
+    .destination__text p {
+        font-size: 17px;
+        padding: 0 150px 0 150px;
+    }
+
+    .destination__title {
+        font-size: 30px;
+    }
+
+    .destination_paragraph__groenlandia {
+        font-size: 17px;
+        padding: 0 150px 0 150px;
+    }
+
+    .destination_paragraph {
+        font-size: 17px;
+        padding: 0 150px 0 150px;
+    }
+
+    .footer {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nav__menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        list-style: none;
+        padding-right: 140px;
+    }
+
+    .nav__mobile {/*sai o menu hamburguer*/
+        display: none;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .nav__menu li {/*lista de itens - social media*/
+        margin: 0 30px 0 0;
+    }
+
+    .nav {
+        background-color:#a0bed0 ;
+    }
+
+    .banner__title {
+        font-size: 105px;
+    }
+
+    .banner__subtitle {
+        font-size: 26px;  
+    }
+
+    .banner__btn__transition {
+        font-size: 20px;
+    }
+
+    .about__title {
+        font-size: 35px;
+    }
+
+    .about p {
+        font-size: 19px;
+    }
+
+    .container__destination {
+        display: grid;
+    }
+
+    .destination__siberia {
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-column-gap: 850px;
+        margin-left: -120px;
+    }
+
+    .destination__siberia__wrapper_img {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .destination__siberia__img {
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .destination__text {
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__text h3 {/*siberia*/
+        font-size: 35px;
+    }
+
+    .destination__text p {
+        font-size: 18px;
+        padding: 0 150px 0 150px;
+    }
+
+    .destination__title {
+        font-size: 42px;
+    }
+
+    .destination_paragraph__groenlandia {
+        margin: auto;
+        font-size: 19px;
+        padding: 10px 80px 0 0;
+        text-align: left;
+    }
+
+    .destination__groenlandia {
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-column-gap: 525px;
+    }
+
+   .destination__groenlandia__wrapper-img {
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__groenlandia__img {
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__description__groenlandia {
+        margin-top: 10px;
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__antartida {
+        margin-top: -10px;
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-column-gap: 525px;
+    }
+
+    .destination_paragraph {
+        font-size: 19px;
+        padding: 10px 0 0 80px;
+        text-align: right;
+    }
+
+    .destination__description__antartida {
+        margin-top: 10px;
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__groenlandia__wrapper-img {
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .destination__antartida__img {
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+
+}
