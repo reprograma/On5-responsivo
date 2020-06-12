@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+/* INÍCIO NAVBAR */
+
+ul {
+    margin:0;
+    padding: 0;
+}
+nav li {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+}
+
+.container {
+    width: 95vw;
+    margin: auto;
+
+}
+/* FIM NAVBAR */
+
+/* INÍCIO ABOUT */
+
+.banner {
+    background-image: url(../img/foto-banner.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner__title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.banner__subtitle {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    
+}
+
+.banner__btn {
+    background-color: #829dad;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.about {
+    background-color: #161616;
+    opacity: 0.8;
+    color: white;
+    padding: 30px;
+}
+
+.about__title, .about p  {
+    text-align: center;
+}
+
+/* FIM ABOUT */
+
+
+
+/* INÍCIO SIBERIA */
+.destination--siberia__img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.destination__text {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* FIM SIBÉRIA */
+
+/* INÍCIO GROELANDIA E ANTARTIDA */
+
+/* IMG GROELANDIA */
+
+.destination--groenlandia__img {
+    width: 100%;
+    /* margin-top: 40px; */
+}
+
+/* IMG ANTARTIDA */
+
+.destination--antartida__img {
+    width: 100%;
+    /* margin-bottom: 40px; */
+}
+
+.destination__title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.destination__description--groenlandia {
+    color: white;
+    background-color: #161616;
+    padding: 30px 55px 30px 55px;
+    text-align: center;
+}
+
+.destination__description--antartida {
+    color: white;
+    background-color: #161616;
+    margin-top: 40px;
+    padding: 30px 55px 30px 55px;
+    text-align: center;
+}
+/* FIM GROELANDIA E ANTARTIDA*/
+
+/* INICIO FOOTER*/
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding: 40px;
+}
+
+footer li {
+    display: inline-block;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: gray;
+}
+footer img {
+    padding: 15px;
+}
+
+small {
+    color: gray;
+}
+/* FIM FOOTER*/
+/* INICIO MEDIA QUERY TABLET */
+@media(min-width: 768px) {
+
+    .nav__menu, nav {
+        background-color: #a0bed0;
+        justify-content: center;
+        width:100%
+    }
+
+    nav li {
+        display: flex;
+        padding: 10px;
+        color: white;
+    }
+
+    .nav__mobile {
+        display: none;
+    }
+    .container {
+        width: 90vw;
+    }
+
+    .banner__subtitle {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .destination--antartida__img {
+        margin-bottom: 30px;
+    }
+}
+/* FIM MEDIA QUERY TABLET */
+
+/* INICIO MEDIA QUERY DESKTOP */
+@media (min-width: 1280px) {
+    .nav_menu {
+        justify-content: flex-end;
+    }
+
+    .banner {
+        padding-bottom: 120px;
+    }
+
+    .banner__title {
+        font-size: 100px;
+        padding-top: 20px;
+    }
+
+    .container {
+        width: 70vw;
+        justify-content: center;
+    }
+/* INICIO AJUSTES SIBÉRIA DESKTOP */
+    .destination--siberia__img {
+        max-width: 70%;
+    }
+
+    .destination--siberia__img {
+        margin: 0;
+    }
+    .destination--siberia, .destination--siberia__img {
+        display: flex;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .destination__text {
+        margin: auto;
+    }
+/* FIM AJUSTES SIBÉRIA DESKTOP */
+
+/* INICIO AJUSTES GROENLANDIA E ANTARTIDA DESKTOP */
+    .destination--groenlandia, .destination--groenlandia__img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .destination--antartida, .destination--antartida__img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .destination__description, .destination__description--antartida {
+        margin: 0;
+        padding: 0;
+        max-width: 50%;
+
+    }
+
+    .destination--antartida__img {
+        margin: 0;
+        padding: 0;
+    }
+    .destination__description--groenlandia {
+        padding: 32px;
+        text-align: left;
+    }
+
+    .destination__description--antartida {
+        padding: 25px;
+        text-align: right;
+    }
+
+    #title-antartica {
+        text-align: right;
+    }
+    #title-groenlandia {
+        text-align: left;
+    }
+    
+    #destinos {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}
+/* FIM MEDIA QUERY DESKTOP */
