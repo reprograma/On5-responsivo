@@ -1,0 +1,365 @@
+/* primeiro passo */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reset do que vem do navegador */
+/* MOBILE*/
+
+/* Menu */
+.nav {
+    background-color: #ffff;
+    width: 100%;
+    height: 55px;
+    /* para responsivo sempre usar porcentagem ou vw*/
+}
+
+/* Lista */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* reseta a propriedade do elemento de lista, é preciso inspecionar elemento por elemento para verificar onde está vazando */
+
+li {
+    display: none;
+    /*somem os links da lista, sobre, etc*/
+}
+
+a {
+    text-decoration: none;
+    /* tirar o sublinhado padrão do link (mas não tira a cos)*/
+}
+
+a:link,
+a:visited {
+    color: #ffff;
+    /*mudar a cor azul padrão do link para branco*/
+}
+
+.container {
+    width: 95%;
+}
+
+/* Menu hamburguer */
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  /*mandar o hamburguer para o lado direito*/
+    padding: 20px 0px;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+/* Imagem banner */
+.banner {
+    width: 100vw;
+    height: auto;
+    /*acompanha o tamanho do conteúdo da section*/
+    background-image: url("../img/foto-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 30px 1px;
+}
+
+/* título "Mundo Gelado"*/
+h1 {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 55px;
+    text-transform: uppercase;
+    /*letras todas maiúsculas*/
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 45px 0px 0px;
+
+}
+
+/* Botão */
+.btn {
+    background-color: #829dad;
+    width: 40%;
+    /* porcentagem relativa ao tamanho da div, do elemento pai*/
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: 'Nunito', Arial, Helvetica;
+    font-size: 13px;
+    text-transform: uppercase;
+  
+
+
+}
+
+/* Subtítulo banner */
+.banner__subtitle {
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica;
+    line-height: 30px;
+}
+
+/* Background Sobre  */
+.about {
+    background-color: #3e4347;
+    width: 100%;
+    padding: 10px 0px 30px 1px;
+
+}
+
+/* Título Sobre */
+.about_title {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0px 0px;
+    ;
+}
+
+/* Paragráfo Sobre*/
+.about_text {
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica;
+    margin: 35px;
+
+}
+
+/* SECTION SIBÉRIA */
+/* Div Sibéria */
+.destinos {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin: 50px 10px 0px 10px;
+}
+
+.destination_destination--siberia {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Imagem Sibéria */
+.destination--siberia__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+/* Título Sibéria */
+h3 {
+    font-size: 22px;
+    color: #161616;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica;
+    width: 100%;
+
+}
+
+/* Texto Sibéria */
+.siberia_text {
+    font-size: 16px;
+    color: #161616;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica;
+    padding: 0px 20px 10px;
+
+
+}
+
+/* SECTION GROENLÂNDIA */
+/* Div Groenlândia */
+.destination--groenlandia {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+
+.destination--groenlandia__wrapper-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Imagem Groenlândia */
+.destination--groenlandia__img {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+
+
+
+
+    /* Background Groenlândia */
+}
+
+.destination__description_destination__description--groenlandia {
+    background-color: #151617;
+    width: 100%;
+    padding: 0px 0px 60px;
+
+}
+
+/* Título Groenlândia */
+.destination__title_groenlandia {
+    font-size: 22px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px 0px 0px;
+
+}
+
+/* Texto Groenlândia */
+.destination_paragraph--groenlandia {
+    padding: 15px 20px;
+    font-size: 17px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 0px 30px;
+}
+
+/* SECTION ANTÁRTIDA */
+/* Div Antártida */
+
+.destination--antartida{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} 
+
+/* Background Antártida */
+.destination__description_destination__description--antartida {
+    background-color: #151617;
+    width: 100%;
+    padding: 0px 0px 60px;
+}
+
+.destination--antardida__wrapper-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Título Antártida */
+.destination__title_antartida {
+    font-size: 22px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 50px 00px 0px;
+    padding: 30px 0px 0px;
+}
+
+/* Texto Antártida */
+.destination_paragraph {
+    padding: 15px 20px;
+    font-size: 17px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 0px 30px;
+}
+
+/* Imagem Antártida */
+.destination--antartida__img {
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 50px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+}
+
+.telefone {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px -75px;
+}
+
+
+/* Background Footer */
+.footer {
+    background-color: #151617;
+    width: 100%;
+    padding: 20px 0px;
+    align-content: center;
+}
+.footer__socialmedia{
+    display: flex;
+    margin: 65px;
+    padding: 35px;
+    }
+
+small {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+    color: #ffff;
+    font-family: 'Nunito', Arial, Helvetica;
+    margin: -75px 0px 40px;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav {
+        background-color: #a0bed0;
+    }
+
+    .nav__menu {
+        justify-content: flex-end; 
+        /*para centralizar os itens do menu*/
+     }
+
+    li {
+ 
+        /* para voltar a aparecer os itens do menu*/
+        padding: 10px;
+        color: white;
+    }
+
+    .nav__mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .nav__menu {
+        justify-content: flex-end;
+    }
+} 
