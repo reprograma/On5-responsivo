@@ -187,12 +187,16 @@ ul{
         text-align: justify;
     }
 
+    .destination--siberia__img, .destination--groenlandia__img, .destination--antartida__img{
+        width: 100vw
+    }
+
     .destination--groenlandia, .destination--antartida{
         display: flex;
     }
 
-    .destination__description--antartida, .destination__description--antartida{
-        width: 100vw
+    .destination__description--antartida, .destination__description--groenlandia{
+        width: 50%
     }
 
     .destination--groenlandia__wrapper-img, .destination--antartida__wrapper-img{
