@@ -1,0 +1,74 @@
+@media (min-width:769px) {
+    /*acima de 768*/
+    .nav {
+        background-color: #829dad;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .nav ul {
+        width: 80%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .nav ul li {
+        float: right;
+        padding: 0 30px;
+    }
+    .nav a {
+        display: block;
+        margin: 5px;
+    }
+    .nav img {
+        display: none;
+    }
+    .nav__link {
+        font-family: 'nunito';
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container {
+        .destination_siberia_img {
+            display: row;
+            justify-content: flex-start;
+            max-width: 50%;
+        }
+        .destination_paragraph_siberia
+    }
+}
+
+@media (max-width: 768px) {
+    /*abaixo de 768*/
+    /*abaixo de 769*/
+    .banner__title {
+        margin: 0;
+        font-family: 'Varela Round';
+        font-weight: 550;
+        /*espessura da fonte*/
+        color: #fff;
+        opacity: 0.91;
+        /*opacidade pra ficar igual o layout*/
+        font-size: 56px;
+        /*tamanho da fonte*/
+        letter-spacing: 0px;
+        /*espaço entre as letras*/
+    }
+    .banner__subtitle {
+        font-family: 'Nunito';
+        font-size: 18px;
+        font-weight: 550;
+        color: #fff;
+        margin-bottom: 55px;
+    }
+    .nav ul {
+        display: none;
+    }
+}
