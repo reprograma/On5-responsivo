@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", "Arial";
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn--primary {
+  color: #000;
+  background-color: #829DAD;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn--primary:hover {
+  background-color: #36b0e0
+}
+
+.nav {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: 100%;
+} 
+
+.nav__menu {
+  list-style: none; /* tira as bolinhas */
+  margin: 0;
+}
+
+.nav__menu li {
+  display: none;
+}
+
+.banner_transition {
+  background: url("../img/foto-banner.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* transformo em coluna */
+  height: 350px;
+}
+
+.banner__title {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 15px;
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: #000 1px 0 1px;
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 30px 30px 10px;
+  text-align: center;
+  text-shadow: #000 2px 1px 2px;
+}
+
+.about {
+  background-color: #454545;
+  color: #fff;
+  padding: 2em 2em;
+}
+
+.about__title {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about p {
+  text-align: center;
+  /* padding: 30px 30px; */
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* transformo em coluna */
+}
+
+.destination {
+  color: #767676;
+  margin-top: 20px; /*espacinho depois do container cinzinha*/
+  max-width: 90%;
+}
+
+img {
+  display: block;
+}
+
+.destination__text {
+  background-color: #161616;
+  padding: 1.5em;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.destination__text h3 {
+  font-size: 22px;
+  padding-bottom: 1em;
+}
+
+.destination__title {
+  font-size: 22px;
+  padding: 0 0 22px;
+}
+
+.footer {
+  background-color: #161616;
+  color: #fff;
+  margin-top: 2em;
+  padding: 3em 0;
+  text-align: center;
+  max-width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+.footer__socialmedia {
+  display: flex;
+  align-items: center;
+  list-style: none; /* tira as bolinhas */
+  margin: 1em;
+  padding: 1em 6em;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  
+  .banner_transition {
+    width: 100%;
+    margin-top: 1em;
+    height: 450px;
+  }
+  
+  .footer__socialmedia {
+    padding: 1em 15em;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner_transition {
+    width: 100%;
+    margin-top: 5em;
+  }
+
+  .banner__title {
+    font-size: 5em;
+    padding: 50px 50px 0;
+  }
+
+  .banner__subtitle {
+    margin: 0 30px 30px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #829DAD;
+    justify-content: center;
+    padding: 2em;
+    z-index: 10;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+  
+  .nav__menu li {
+    display: inline-block;  
+    margin: 0 2em;
+  }
+  
+  .nav__link {
+    color: #161616;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .nav img {
+    display: none;
+  }
+
+  .footer__socialmedia {
+    padding: 1em 22em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav__menu li {
+    display: inline-block;  
+    margin: 0 5em;
+  }
+
+  .banner_transition {
+    width: 100%;
+    margin-top: 5em;
+    height: 450px;
+  }
+
+  .banner__title {
+    font-size: 5em;
+    padding: 50px 50px 0;
+  }
+
+  .banner__subtitle {
+    margin: 40px;
+  }
+
+  .about p {
+    margin: 0 11em;
+  }
+
+  .destination--siberia {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .destination--siberia__img {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin: 0;
+  }
+
+  .destination--siberia > .destination__text {
+    max-width: 25%;
+    background-color: #fff;
+    color: #161616;
+    text-align: left;
+    border-left: 0.5em solid #36b0e0 ;
+  }
+
+  .destination--groenlandia {
+    margin-top: 50px;
+    display: flex;
+    align-items: stretch; /*deixa os itens da mesma altura */
+    flex-direction: row;
+  }
+
+  .destination--groenlandia__img {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .destination__description--groenlandia {
+    font-size: 22px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .destination--antartida {
+    display: flex;
+    align-items: stretch; /*deixa os itens da mesma altura */
+    flex-direction: row-reverse;
+  }
+
+  .destination__description--antartida {
+    font-size: 22px;
+    text-align: right;
+    padding-top: 5em;
+    margin: 0;
+  }
+
+  .destination--antartida__img {
+    max-width: 50%; 
+  }
+  
+  .footer {
+    font-size: 22px;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 100%;  
+  }
+
+  .banner_transition {
+    width: 100%;
+    margin-top: 5em;
+    height: 450px;
+  }
+
+  .about p {
+    margin: 0 16em;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+  
+  .nav__menu li {
+    display: inline-block;  
+    margin: 0 5em;
+  }
+
+  .nav {
+    padding: 2em 0;
+  }
+
+  .destination__description--antartida {
+    padding-top: 12em;
+  }
+
+}
