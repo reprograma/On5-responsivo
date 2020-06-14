@@ -1,0 +1,313 @@
+.title {
+    font-style: normal;
+    font-stretch: wider;
+    font-size: 105px;
+}
+
+h1.banner__title {
+    letter-spacing: 2vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    text-align: center;
+    background-color: #f9f8fa;
+} 
+ 
+.about { 
+    background-color: rgb(78, 75, 75);
+}
+
+.nav {
+    background-color: #f8f9fa; 
+    height: 12vh;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    }
+
+    
+.nav__menu {
+        display: none;
+    }
+    
+.nav__mobile {
+        height: 50%;
+        padding: 13px;
+      }
+
+p {
+    font-size: 14px;
+    text-align: justify;
+    
+}
+
+
+.about__title {
+        align-content: center;
+        margin-top: 0vh;
+        border: 0vh;
+        color: #f9f8fa;
+    }
+
+.destination__siberia {
+    background-color: #f9f8fa;
+    color: black;
+    width: 95%;
+    text-align: center;
+}
+
+div {
+    background-color: #f9f8fa;
+    color: black;
+}
+
+    h3.destinatio_title_siberia {
+        background-color: #f9f8fa
+    }
+div>
+
+.destination_paragraph_siberia {
+    background-color: #f9f8fa;
+    color: black;
+}
+
+
+
+/*    h3 {
+        color: black;
+        background-color: #f9f8fa;
+    }
+
+    p.destinatio_paragraph_siberia {
+        color: black;
+        background-color; #f9f8fa;
+    }
+*/
+
+.destination_siberia_img, .destination_groenlandia_img, .destination_antartida_img {
+    width: 100%;
+    background-color: #f8f9fa;
+    }    
+
+
+.destination__groenlandia, .destination__siberia, .destination__antartida {
+    background-color: black;
+    color: rgb(116, 114, 114);
+    width: 95%;
+    text-align: center;
+/*    font-style: bold; */
+} 
+        p{
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+
+.destination_siberia {
+    background-color: #f9f8fa;
+}
+
+.banner__title {
+    color: #f9f8fa;
+    font-size: 4em;
+    font-style: normal;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.banner__subtitle {
+    color: #f9f8fa;
+    display: block;
+    font-size: 20px;
+    justify-content: center;
+/*    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+*/    text-align: center;
+    line-height: 10vh;
+    flex-wrap: nowrap;
+    word-break: keep-all;
+}
+
+.banner__transition {
+    background: url(../img/foto-banner.jpg) center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100vw;
+    font-family: 'Varela Round';
+    text-align: center;
+
+    /*
+    <p class= "paragrafo" {
+        color: #f9f8fa;
+        display: block;
+        justify-content: space-around;
+        margin-block-start: 0vh;
+        margin-block-end: 3vh;
+        margin-inline-start: 2vh;
+        margin-inline-end: 2vh;
+    </p> */
+    }   
+  
+    
+ /*   
+.banner_btn_transition {
+    background-color: #2b3856;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+*/
+
+.container {
+    align-content: center;
+    width: 100%;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+}
+
+    a.tel {
+    color: gray;
+    margin-top: 20px;
+
+}
+
+.footer_socialmedia {
+    background: black;
+}
+
+/*    li {
+        list-style-type: none;
+        flex-direction: row;
+        display: block;
+    }
+*/
+
+.footer#contato.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+    a.tel {
+        padding: 2vh;
+    }
+
+
+
+    ul.footer_socialmedia {
+        flex-direction: row;
+    }
+
+.footer__socialmedia {
+    display: flex;
+    flex-direction: grid;
+    color: whitesmoke;
+    opacity: 40%;
+    justify-content: center;
+    padding: 2vh;
+    margin-top: 4vh;
+    }
+
+        li {
+            list-style-type: none;
+        }
+        
+
+@media (min-width: 768px) {
+
+    .banner__subtitle {
+        font-size: 5vh;
+    }
+    .banner_btn_transition {
+        font-size: 3vh;
+    }
+
+        h2 {
+            font-size: 4vh;
+        }  
+        p {
+            font-size: 3vh;
+        }  
+}
+
+@media (min-width: 1024px) {
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    align-content: space-around;
+}
+
+/*    ul.nav__menu { 
+         flex: auto;
+        align-content: space-around;
+        align-items: center;
+    }
+*/
+
+.banner__transition {
+    background: url(../img/foto-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.5vh;
+} 
+
+    
+.nav__mobile {
+    display: none;
+  }
+
+
+/*
+  .nav {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+
+    .nav__menu {
+  align-items: center;
+  align-content: space-around;
+}
+    li {
+        align-items: center;
+        align-content: space-around;
+    }
+
+    */
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #a0bed0;
+}
+
+.container {
+    display: flex;
+    place-items: grid;
+}
+
+.footer_socialmedia {
+    display: flex;
+    align-content: space-around;
+}
+
+}
