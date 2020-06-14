@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    /*caixa com borda em volta*/
+    max-width: 100%;
+    /*para deixar ele completo na pagina, o asterisco é para a regra ser pro site todo, também arruma as imagens milagrsamente*/
+    -webkit-font-smoothing: antialiased;
+    /*pra tirar serrilhado*/
+    -moz-osx-font-smoothing: grayscale;
+    /*mesma coisa só que pra outro navegador*/
+}
+
+body {
+    margin: 0;
+    /*deixa sem margem do lado*/
+    padding: 0;
+}
+
+.nav {
+    color: #a0bed0;
+    display: flex;
+    justify-content: flex-end;
+    /*deixa no final o hamburguinho*/
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    padding: 0 15px;
+    /*nao deixa o hamburguinho colado no final*/
+}
+
+.nav__mobile {
+    height: 50%;
+    /*o hamburguinho aparece com 50% da altura da imagem normal*/
+}
+
+
+/*Primeira seção header */
+
+.banner__transition {
+    background: url(../img/foto-banner.jpg) center no-repeat;
+    /*coloca a imagem de fundo no centro*/
+    width: 100%;
+    height: 100%;
+    /*ocupa toda a "tela"*/
+    text-align: center;
+    /*texto alinhado no centro*/
+    justify-content: center;
+    padding: 110px 15px 140px;
+    /*deixa uma borda pro texto não ficar até os cantos*/
+    margin: 0;
+    background-size: cover;
+}
+
+.banner__title {
+    margin: 0;
+    font-family: 'Varela Round';
+    font-weight: 500;
+    /*espessura da fonte*/
+    color: #fff;
+    opacity: 0.91;
+    /*opacidade pra ficar igual o layout*/
+    font-size: 105px;
+    /*tamanho da fonte*/
+    letter-spacing: 3px;
+    /*espaço entre as letras*/
+}
+
+.banner__subtitle {
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.banner_btn_transition {
+    text-decoration: none;
+    text-align: center;
+    /*DEIXAR O TEXTO NO CENTRO*/
+    width: 100%;
+    max-width: 120px;
+    border-radius: 6px;
+    /*pra deixar redondo*/
+    padding: 15px 30px;
+    /*espaço interno do botão*/
+    background: #829dad;
+    /*cor do botão*/
+    color: white;
+    /*cor da fonte de dentro do botão*/
+    font-family: 'Nunito';
+    /*fonte do botão*/
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/*Segunda seção*/
+
+#sobre {
+    background-color: #161616d3;
+    width: 100%;
+    padding: 20px;
+}
+
+.about__title {
+    font-family: 'Varela Round';
+    color: #fff;
+    opacity: 0.91;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 15px;
+}
+
+#sobre p {
+    font-family: 'Nunito';
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 35px;
+    font-weight: 500;
+}
+
+
+/*sibéria-------------------*/
+
+.destination__siberia {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.destination__siberia .siberia_media_querie h3 {
+    font-family: 'Nunito';
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.destination__siberia .siberia_media_querie p {
+    margin: 0px;
+    padding: 0px 5px 0px 45px;
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.groelandia_artardidamedia_querie {
+    background-color: #161616;
+    padding-bottom: 5px;
+}
+
+.groelandia_artardidamedia_querie h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+/*Groelandia --------------*/
+
+.destination__groenlandia {
+    margin-bottom: 45px;
+}
+
+.groelandia_artardidamedia_querie p {
+    margin: 0px;
+    padding: 10px 35px 0px;
+    text-align: center;
+    font-family: 'Nunito';
+    color: #fff;
+    opacity: 0.5;
+}
+
+.destination_title_groelandia {
+    font-family: 'Varela Round';
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 28px 15px 0px 15px;
+}
+
+
+/*arrumar as ibagens*/
+
+.container {
+    width: 100%;
+    padding: 50px 15px 60px 15px;
+    /*cima, lado, baixo, lado*/
+}
+
+
+/*-------------------------------------------/*
+/*Antártida */
+
+.destination--antartida {
+    background-color: #161616;
+    padding-bottom: 5px;
+}
+
+.destination__title {
+    font-family: 'Varela Round';
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 28px 15px 0px 15px;
+}
+
+.destination_paragraph {
+    margin: 0px;
+    padding: 10px 35px 0px;
+    text-align: center;
+    font-family: 'Nunito';
+    color: #fff;
+    opacity: 0.5;
+}
+
+
+/*agora vamos para o footer*/
+
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding: 40px 50px;
+}
+
+.footer__socialmedia {
+    /*arrumar depois os icones*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.footer_twitter,
+.footer_facebook,
+.footer_youtube {
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.tel {
+    font-family: 'Nunito';
+    color: #fff;
+    opacity: 0.5;
+}
+
+footer small {
+    font-family: 'nunito';
+    color: #fff;
+    opacity: 0.5;
+}
