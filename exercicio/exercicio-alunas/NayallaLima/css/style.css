@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+.container-menu {
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.container-mobile {
+    padding: 10px 30px;
+}
+
+.menu {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .container-menu {
+        background-color: #a0bed0;
+    }
+    .menu {
+        display: flex;
+        font-size: 18px;
+    }
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    .menu ul li a {
+        padding-right: 70px;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+        justify-content: flex-end;
+    }
+    .menu ul li a:hover {
+        color: #829dad;
+    }
+    .container-mobile {
+        display: none;
+    }
+}
+
+.banner {
+    background: url(../img/foto-banner.jpg) center no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100vw;
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        background-size: cover;
+    }
+}
+
+.banner-title {
+    color: white;
+    margin: 0;
+    padding: 75px 0 0 30px;
+    opacity: 80%;
+    font-family: 'Varela Round';
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    align-items: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.banner-subtitle {
+    color: white;
+    margin-top: -8px;
+    font-size: 18px;
+    opacity: 80%;
+    text-shadow: 1px 1px 3px black;
+    padding: 20px 30px 5px 15px;
+}
+
+.btn {
+    padding: 13px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #829dad;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px black;
+}
+
+@media(min-width: 768px) {
+    .banner-subtitle {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .banner-title {
+        font-size: 105px;
+    }
+    .banner-subtitle {
+        font-size: 28px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+}
+
+.about {
+    color: white;
+    background: #1C1C1C;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+}
+
+.about-title {
+    font-family: 'Varela Round';
+    font-size: 22px;
+    padding: 30px;
+}
+
+.about p {
+    margin-top: -10px;
+    padding: 0px 40px 35px 40px;
+}
+
+@media(min-width: 1024px) {
+    .about-title {
+        font-size: 50px;
+        padding: 5px;
+    }
+}
+
+.container-destinos {
+    width: 80vw;
+    margin: 30px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+.destination-siberia-title {
+    margin-top: 10px;
+}
+
+.destination-siberia-title, .destination-siberia-subtitle {
+    font-family: 'Varela Round';
+    color: black;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.destination-siberia-img, .destination-groenlandia-img, .destination-antartida-img {
+    margin: 0%;
+    width: 100%;
+}
+
+.destination-groenlandia, .destination-antartida {
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+
+.destination-antartida {
+    margin-top: 40px;
+}
+
+.destination-groenlandia-title {
+    font-family: 'Varela Round';
+    margin: 0;
+    padding-top: 30px;
+}
+
+.destination-antartida-title {
+    font-family: 'Varela Round';
+    margin: 0;
+    padding-top: 30px;
+}
+
+.destination-groenlandia p, .destination-antartida p {
+    opacity: 40%;
+    padding: 30px;
+    margin: 0;
+}
+
+.destination-title {
+    font-family: 'Varela Round';
+    margin: 0;
+    padding-top: 30px;
+}
+
+@media(min-width: 1024px) {
+    .container_destinos {
+        width: 80vw;
+        align-items: center;
+        margin: 30px 40px 30px 120px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .destination-siberia p {
+        font-size: 25px;
+    }
+    .destination-siberia {
+        display: flex;
+        flex-direction: row;
+    }
+    .destination-siberia-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 90px;
+        line-height: 20px;
+        text-align: justify;
+        justify-content: center;
+    }
+    .destination-siberia-title {
+        margin: 0;
+        padding: 25%;
+    }
+    .destination-siberia-subtitle {
+        margin: 0;
+    }
+    .destination-siberia-img {
+        width: 75%;
+    }
+    .destination-groenlandia {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .destination-antartida {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+    }
+    .destination-groenlandia-text, .destination-antartida-text {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        opacity: 80%;
+        width: 100%;
+    }
+    .destination-groenlandia-title p {
+        flex-direction: column;
+        width: 50%;
+        margin: 0;
+    }
+    .destination-groenlandia-title {
+        padding: 90px 0 0 30px;
+    }
+    .destination-groenlandia-text {
+        padding: 4px 40px 0 30px;
+    }
+    .destination-antartida-title {
+        padding-right: 30px;
+        padding-top: 90px;
+    }
+    .destination-groenlandia-img, .destination-antartida-img {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer p {
+    padding: 50px 30px 25px 30px;
+    color: #B0C4DE;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-img {
+    opacity: 40%;
+    padding: 10px;
+}
+
+footer small {
+    opacity: 40%;
+    padding: 22px 0px 50px 0px;
+    font-size: 14px;
+}
+
+@media(min-width: 1024px) {
+    footer p {
+        font-size: 20px;
+    }
+}
