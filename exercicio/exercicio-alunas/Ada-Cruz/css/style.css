@@ -1,0 +1,339 @@
+:root {
+    --text-primary: #fff;
+    --text-secondary: #000;
+    --font-primary: 'Nunito';
+    --font-secondary: 'Varela Round';
+    --header-color: #a0bed0;
+    --site-bg: #f8f9fa;
+    --button-color: #829dad;
+    --button-color-hover: #36b0e0;
+    --title-size: 22px;
+    --description-size: 16px;
+    --main-title-size: 105px;
+    --button-size: 13px;
+    --paragraph-size: 27px;
+    --company-title-size: 105px;
+    --company-subtitle-size: 18px;
+    --about-title-size: 33px;
+    --about-paragraph-size: 27px;
+    --destination-title-size: 22px;
+    --destination-other-title-size: 38px;
+    --destination-paragraph-size: 24px;
+    --destination-other-paragraph-size: 19px;
+    --footer-size: 30px;
+}
+
+* {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--site-bg);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-secondary);
+}
+
+a, .btn {
+    font-size: var(--button-size);
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.btn {    
+    background: var(--button-color);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: var(--button-size);
+    text-transform: uppercase;
+}
+
+h2, h4 {
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: var(--destination-other-title-size);
+}
+
+.btn:hover {
+    background: var(--button-color-hover);
+}
+
+.banner {
+    background: url(../img/foto-banner.jpg) center no-repeat;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    height: 45vh;
+}
+
+.banner__title {
+    margin: 0;
+    font-weight: 500;
+    opacity: 0.91;
+    letter-spacing: -2px;
+    font-size: var(--company-title-size);
+    text-transform: uppercase;
+    padding: 3rem 0 0 0;
+}
+
+.banner__subtitle {
+    margin-bottom: 5rem;
+    font-size: var(--company-subtitle-size);
+}
+
+.about {
+    background-color: #161616;
+    opacity: 0.8;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about h2 {
+    margin: 0 0 1rem 0;
+}
+
+.about p {
+    font-size: var(--about-paragraph-size);
+}
+
+.about__title {
+    font-size: var(--about-title-size);
+}
+
+#destinos {
+    margin: 1rem;
+}
+
+.destination__text p, .destination__text h3 {
+    color: var(--text-secondary);
+}
+
+.destination__text p {
+    font-size: var(--destination-paragraph-size);
+}
+
+.destination__text h3 {
+    font-size: var(--destination-title-size);
+}
+
+#destinos .container>div:last-child>div {
+    background: #000;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#destinos .container>div:last-child>div {
+    margin-top: 3rem;
+}
+
+.destination__title {
+    margin-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.destination__description p {
+    opacity: 0.5;
+}
+
+.destination__description p.destination_paragraph {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: var(--destination-other-paragraph-size);
+}
+
+#destinos .container div div div img, .destination img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+footer {
+    background: black;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+footer a, footer ul, footer div {
+    width: 100vw;
+}
+
+footer a, footer div {
+    margin: 3rem;
+    opacity: 0.5;
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer__socialmedia {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer a{
+    font-size: var(--footer-size);
+}
+
+@media only screen and (max-width: 1024px) {
+    :root {        
+        --company-subtitle-size: 24px;
+        --about-title-size: 44px;
+        --about-paragraph-size: 31px;
+        --destination-title-size: 40px;
+        --destination-other-title-size: 50px;
+        --destination-paragraph-size: 32px;
+        --destination-other-paragraph-size: 14px;
+        --button-size: 32px;
+        --footer-size: 30px;
+    }
+    .banner{
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {        
+        --company-subtitle-size: 24px;
+        --about-title-size: 44px;
+        --about-paragraph-size: 31px;
+        --destination-title-size: 40px;
+        --destination-other-title-size: 50px;
+        --destination-paragraph-size: 32px;
+        --destination-other-paragraph-size: 34px;
+        --button-size: 32px;
+        --footer-size: 30px;
+    }
+    * {
+        text-align: center;
+    }
+    .banner {
+        height: 55vh;
+    }
+    .banner__subtitle{
+        margin-bottom: 5rem;
+
+    }
+    .about {
+        padding: 6vh;
+    }
+    .nav__menu:hover li .nav__link {
+        visibility: visible;
+    }
+    .nav__menu li {
+        padding: 0 2rem;
+        display: none;
+    }
+    #destinos {
+        margin: 5rem 1rem;
+    }
+    .destination__text h3 {
+        margin-top: 2vh;
+    }
+    p.destination_paragraph {
+        margin: 3vh 0;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    :root {      
+        --company-title-size: 75px;  
+        --company-subtitle-size: 18px;
+        --about-title-size: 24px;
+        --about-paragraph-size: 14px;
+        --destination-title-size: 30px;
+        --destination-other-title-size: 40px;
+        --destination-paragraph-size: 26px;
+        --destination-other-paragraph-size: 22px;
+        --button-size: 18px;
+        --footer-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .nav {
+        background: var(--header-color);
+    }
+    .nav__menu {
+        list-style: none;
+        padding: 2rem 0 2rem 2rem;
+    }
+    .nav__menu li {
+        padding: 0 2rem;
+    }
+    .nav__menu:last-child {
+        margin-right: 18vw;
+    }
+    .nav__link {
+        display: inline;
+    }
+    .nav__mobile {
+        display: none;
+    }
+    #destinos {
+        margin: 5rem;
+    }
+    .destination {
+        display: flex;
+        height: 40vw;
+    }
+    .destination img {
+        width: 60vw;
+    }
+    .destination__border {
+        background: var(--header-color);
+        height: 7rem;
+        width: 1.5rem;
+        margin-top: 20vh;
+    }
+    .destination__text {
+        margin: 2rem 0 0 2rem;
+        padding-top: 15vh;
+    }
+    .destination__text p {
+        text-align: center;
+    }
+    #destinos .container>div:last-child>div:last-child {
+        margin: 0;
+    }
+    #destinos .container>div:last-child {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    #destinos .container>div:last-child>div>div {
+        width: 50%;
+    }
+    .destination__description {
+        margin-top: 2.5rem;
+    }
+    .destination__description--groenlandia {
+        text-align: start;
+    }
+    .destination__description--antartida {
+        text-align: end;
+    }
