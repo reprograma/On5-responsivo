@@ -1,0 +1,313 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    height: 55px;   
+}
+
+/*ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: none;
+}
+
+.container {
+    width: 80vw;
+    justify-content: flex-end;
+    /*height: 7vw;*/
+}
+/*TENTATIVAS DE MOVER O HAMBURGUER PARA O END*/
+/*.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.imagem_hamburguer{
+    justify-content: flex-end;
+    display: flex;
+}
+
+/*.a{
+    text-decoration: none;
+}
+ /*muda a cor do lik*/
+ 
+ /*a:link, 
+ a:visited{
+     color: white;
+ }
+
+ .banner {
+     width:100vw;
+     height: auto;
+ }
+.banner_transition{
+      align-items: flex-end;
+       width: 80%;
+       display:flex;
+}
+
+
+/*@media (min-width: 768px) {
+ .nav { 
+     background-color: #a0bed0;
+ }
+ .nav_menu{
+     justify-content: center;
+ }
+.li{
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+   
+.nav_mobile{
+    display: none;
+}
+
+
+.banner_transition{
+    display:flex;
+}
+.banner_transition h2{
+    text-align: center;
+    margin-left: 20px;
+}
+}
+@media (min-width: 1280px){
+.nav_menu{
+    justify-content:flex-end;
+} 
+
+}
+
+/*.banner_transition{
+    background: url("../img/foto-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width:100%;
+    opacity: 95%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.banner_transition h2{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'varella round';
+    padding-bottom: 30px;
+    letter-spacing:  2px;
+    opacity: 92%;
+    padding-right: 41px;
+
+}
+.banner_transition h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    padding: 20px;
+    font-family: 'varela Round';
+    text-align: center;
+    margin-top: 34px;
+    letter-spacing:3px;
+}
+.banner_transition a{
+      background-color: #829dad;
+      padding: 9px 9px;
+      text-decoration: none;
+      border-style: hidden;
+      color: white;
+      margin-left: 33%;
+      margin-right: 33%;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-size: 12px;    
+}
+.about{
+    background-color: #282f36;
+    color:white;
+    margin-top: 0;
+    padding: 41px 41px;
+}
+.about h2{
+padding: 10px 10px;
+text-align: center;
+margin: 0px;
+}
+.about p{
+padding: 5px 5px;
+text-align:center;
+margin: 5px 5px;
+}
+.container_destinos{
+    max-width: 100vw;
+    margin: 15px 34px -34px;
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+}
+.destination--groenlandia{
+    text-align:center;
+    color: white;
+    padding: 12px;
+    margin: 4px -11px -34px;
+}
+
+.destination--groenlandia h4{
+padding: 14px;
+background-color: black;
+}
+
+.destination--groenlandia__wrapper-img{
+    margin-bottom: 41px;
+}
+
+
+/* para fazer com que todas as imagem sigam o mesmo padrao, acrescentar img na div acima */
+/*.container_destinos img{
+    width: 100%;
+}
+/* ou podera criar uma classe)  class= "nome_da_class" .imagem_siberia{
+    width: 100%;*/
+
+    
+/*.imagem-groelandia{
+    width: 100%;
+    margin-bottom: -28px;
+    
+}
+
+.destination_text{
+    text-align: center;
+    }
+.destination h3{
+    flex-direction: column;
+    text-align: center;
+}
+
+.destination p{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px 14x 106x;
+    margin: -20px 0px -2px;
+ }
+.destination__description {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px Opx 10px;
+    margin-top: 20px;
+}
+
+.destination_paragraph{
+    background-color: black;
+    padding: 14px 13px 15px;
+    margin: -23px 0px 0px; 
+}   
+.footer{
+    background-color: black;
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px -5px 0px;
+    padding: 10px 10px 10px;
+}
+
+.footer ul{
+   justify-content: space-evenly;
+   list-style: none;
+   display: flex;
+   margin: 23px 91px 12px;
+   height: 100px;
+   align-items: center;
+}
+.footer a{
+ text-decoration: none;
+ color:rgb(83,82,82);
+ font-size: 14px;
+ margin-top: 22px;
+}
+
+@media (min-width: 768px){
+.banner_transition h1{
+font-size: 41px;
+padding: 61px;
+letter-spacing: -3px;
+margin: 4px;
+margin-top: -7px;
+display:flex;
+
+}
+.banner_transition h2{
+font-size: 21px;
+margin: -36px 0px 38px;
+opacity: 81%;
+display:flex;
+}
+.banner_transition a{
+margin-left:  274px;
+margin-right: 274px;
+display:flex;
+}
+
+
+/*@media (min-width: 1025px){
+     .nav{
+        background-color: #829dad;
+        display: flex;
+        width: 100vw;
+        height: 3vw;
+    }
+    
+    .container{
+         align-items: space-around;
+    }
+    .nav ul{
+        color: white;          
+    }
+    nav img{
+        display:none;
+    }
+    .nav_menu{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: white;
+        max-width: 70%;
+        margin-left:30vw;
+     } 
+     .navi_mobile{
+         display:none;
+     } 
+
+     .nav_link{
+        text-decoration: none;
+        color:white;
+        display: flex;
+     }   
+     .banner_transition{
+        background: url("../img/foto-banner.jpg") none;
+    }
+    .destination--groenlandia{
+        flex-direction: row;
+    }
+
+}
+
+/*.img-responsiva {
+    max-width: 100%;
+    height: auto;
+}*/
