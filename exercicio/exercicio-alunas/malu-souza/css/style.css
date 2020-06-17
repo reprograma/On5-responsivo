@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.nav{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    justify-content: flex-end;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover{
+    color: #36b0e0;
+}
+
+.container{
+    width: 80vw;
+    margin: 30px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination__siberia,
+.destination__groenlandia,
+.destination__antartida {
+    width: 80vw;
+    margin: 30px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.banner__transition{
+    width: 100vw;
+    height: auto;
+    background-image: url("../img/foto-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination--siberia__img,
+.destination--groenlandia__img,
+.destination--antartida__img {
+    width: 100vw;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+h1{
+    font-family: "Varela Round", Helvetica, sans-serif;
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.btn{
+    background-color: colocar a cor correta aqui;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.banner__subtitle{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: #161616;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1em;
+    padding: 8% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer a {
+    color: #829dad;
+}
+
+.footer a:hover {
+    color:#36b0e0;
+}
+
+.footer-socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-twitter,
+.footer-facebook,
+.footer-youtube {
+    margin: 16px;
+    opacity: 0.5;
+    padding: 30% 0%;
+}
+
+.footer-twitter:hover,
+.footer-facebook:hover,
+.footer-youtube:hover {
+    margin: 16px;
+    opacity: 0.9;
+    padding: 30% 0%;
+}
+
+
+
+@media(min-width:768px){
+    .nav{
+        background-color: #a0bed0;
+    }
+    .nav__menu {
+        justify-content: center;
+    }
+    li{
+        display: flex;
+        padding: 10px;
+        color: white;
+    }
+    .nav__mobile {
+        display: none;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-menu {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 20%;
+    }
+
+@media(min-width:1280px){
+    .nav__menu{
+        justify-content: flex-end;
+        padding-right: 15%;
+        }
+    
+    .nav-link {
+        display: flex;
+        font-size: 1.16em;
+        padding: 0% 30%;
+        }
+    }
+}
+
